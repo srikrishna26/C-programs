@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+ int main(void)
+ { 
+  int n,t,r,s=0,q;
+  scanf("%d",&n); 
+  t=q=n;
+  while(t)
+  {
+      r=t%10;
+      s=s+(r*r*r);
+      t/=10;
+  }  
+  if (q==s)
+   printf("Yes");
+  else
+   printf("No");
+ }
